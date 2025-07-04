@@ -1,0 +1,36 @@
+### Create a new student
+POST http://localhost:8080/api/students
+Content-Type: application/json
+
+{
+    "name": "Jane Smith",
+    "email": "jane@example.com",
+    "age": 17,
+    "className": "11th",
+    "section": "B",
+    "rollNumber": "2024002",
+    "phoneNumber": "9876543211"
+}
+
+### Get all students
+GET http://localhost:8080/api/students
+
+### Get student by ID
+GET http://localhost:8080/api/students/1
+
+### Update student
+PUT http://localhost:8080/api/students/1
+Content-Type: application/json
+
+{
+    "name": "Jane Updated",
+    "email": "jane.updated@example.com",
+    "age": 18,
+    "className": "12th",
+    "section": "A",
+    "rollNumber": "2024002",
+    "phoneNumber": "9876543211"
+}
+
+### Delete student
+DELETE http://localhost:8080/api/students/1
